@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           CUSTOM CURSOR                -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           BACKGROUND FX                -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="grid-bg"></div>
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--            NAVIGATION                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <nav id="navbar">
+        <a href="#hero" class="logo">&lt;Dev /&gt;</a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           MOBILE MENU                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#hero"       onclick="closeMobileMenu()">Home</a>
+        <a href="#about"      onclick="closeMobileMenu()">About</a>
+        <a href="#skills"     onclick="closeMobileMenu()">Skills</a>
+        <a href="#projects"   onclick="closeMobileMenu()">Projects</a>
+        <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+        <a href="#contact"    onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           HERO SECTION                 -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-content">
+
+            <!-- Left: Text -->
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for work
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="line1">Hi, I'm</span>
+                    <span class="line2" id="typewriter"></span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    A passionate <strong>Full Stack Developer</strong> crafting
+                    beautiful digital experiences with modern technologies.
+                    I turn ideas into reality through clean code and creative design.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Projects Done</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Years Exp.</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Visual -->
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="floating-card">
+                        <div class="fc-icon blue"><i class="fas fa-code"></i></div>
+                        <div class="fc-text">
+                            <div class="title">Full Stack</div>
+                            <div class="sub">Development</div>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="fc-icon pink"><i class="fas fa-palette"></i></div>
+                        <div class="fc-text">
+                            <div class="title">UI/UX Design</div>
+                            <div class="sub">Figma & More</div>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="fc-icon green"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="fc-text">
+                            <div class="title">Responsive</div>
+                            <div class="sub">All Devices</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           ABOUT SECTION                -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="about">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">Know Who <span>I Am</span></h2>
+                <p class="section-subtitle">Passionate developer with a love for creating elegant solutions</p>
+            </div>
+
+            <div class="about-grid">
+
+                <!-- Image Side -->
+                <div class="about-image-wrapper reveal-left">
+                    <div class="about-img-box">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="experience-badge">
+                        <div class="num">2+</div>
+                        <div class="text">Years of<br>Experience</div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="about-text reveal-right">
+                    <h3>Full Stack Developer & Problem Solver</h3>
+                    <p>
+                        I'm a dedicated Full Stack Developer with a passion for building
+                        robust, scalable web applications. I enjoy working on all layers of
+                        the tech stack, from designing intuitive user interfaces to
+                        architecting efficient backend systems.
+                    </p>
+                    <p>
+                        My journey in software development started with curiosity and
+                        has evolved into a professional pursuit of excellence. I believe
+                        in writing clean, maintainable code and continuously learning
+                        new technologies to stay ahead of the curve.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-user"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Full Name</div>
+                                <div class="value">Full Stack Developer</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Email</div>
+                                <div class="value">developer@email.com</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Location</div>
+                                <div class="value">Available Worldwide</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Status</div>
+                                <div class="value open-status">Open to Work ✓</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Education</div>
+                                <div class="value">Computer Science</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-language"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Languages</div>
+                                <div class="value">English, Arabic</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn-primary btn-sm">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn-secondary btn-sm">
+                            <i class="fas fa-comments"></i> Let's Talk
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+<!--           SKILLS SECTION               -->
+<!-- ═══════════════════════════════════════ -->
+<section id="skills">
+    <div class="container">
+
+        <div class="section-header reveal">
+            <div class="section-tag">My Skills</div>
+            <h2 class="section-title">Tech <span>Stack</span></h2>
+            <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+        </div>
+
+        <!-- ── Tab Buttons ── -->
+        <div class="skills-tabs reveal">
+            <button class="tab-btn active" onclick="showSkills('all', this)">All</button>
+            <button class="tab-btn" onclick="showSkills('frontend', this)">Frontend</button>
+            <button class="tab-btn" onclick="showSkills('backend', this)">Backend</button>
+            <button class="tab-btn" onclick="showSkills('tools', this)">Tools</button>
+        </div>
+
+        <!-- ── Skills Grid ── -->
+        <div class="skills-grid reveal" id="skillsGrid">
+
+            <!-- FRONTEND -->
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">React</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Vue.js</span>
+                        <span class="skill-badge">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Bootstrap</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">TypeScript</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-badge">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-badge">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Firebase</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="backend">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                             alt="Express"
+                             style="filter: invert(1);">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Express</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <!-- TOOLS -->
+            <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Docker</span>
+                        <span class="skill-badge">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Figma</span>
+                        <span class="skill-badge">Advanced</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">AWS</span>
+                        <span class="skill-badge">Intermediate</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                             alt="GitHub"
+                             style="filter: invert(1);">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">GitHub</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+            <div class="skill-card" data-category="tools">
+                <div class="skill-card-inner">
+                    <div class="skill-icon-wrap">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">VS Code</span>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                </div>
+                <div class="skill-hover-line"></div>
+            </div>
+
+        </div>
+        <!-- End Skills Grid -->
+
+        <!-- ══════════════════════════════════════
+             PROFICIENCY LEVELS
+        ═══════════════════════════════════════ -->
+        <div class="proficiency-section reveal">
+
+            <div class="proficiency-header">
+                <div class="section-tag">Proficiency</div>
+                <h3 class="proficiency-title">How Well I <span>Know Them</span></h3>
+                <p class="proficiency-sub">An honest breakdown of my skill levels across core technologies</p>
+            </div>
+
+            <div class="proficiency-grid">
+
+                <!-- Left Column -->
+                <div class="proficiency-col">
+
+                    <div class="prof-item">
+                        <div class="prof-top">
+                            <div class="prof-label">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                                <span>JavaScript / TypeScript</span>
+                            </div>
+                            <span class="prof-percent">90%</span>
+                        </div>
+                        <div class="prof-track">
+                            <div class="prof-fill" data-width="90"></div>
+                        </div>
+                        <div class="prof-meta">
+                            <span class="prof-dots">
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle half"></i>
+                            </span>
+                            <span class="prof-tag">Expert</span>
+                        </div>
+                    </div>
+
+                    <div class="prof-item">
+                        <div class="prof-top">
+                            <div class="prof-label">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                                <span>React / Vue.js</span>
+                            </div>
+                            <span class="prof-percent">85%</span>
+                        </div>
+                        <div class="prof-track">
+                            <div class="prof-fill" data-width="85"></div>
+                        </div>
+                        <div class="prof-meta">
+                            <span class="prof-dots">
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle empty"></i>
+                            </span>
+                            <span class="prof-tag">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="prof-item">
+                        <div class="prof-top">
+                            <div class="prof-label">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <span>HTML5 / CSS3</span>
+                            </div>
+                            <span class="prof-percent">95%</span>
+                        </div>
+                        <div class="prof-track">
+                            <div class="prof-fill" data-width="95"></div>
+                        </div>
+                        <div class="prof-meta">
+                            <span class="prof-dots">
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                            </span>
+                            <span class="prof-tag">Expert</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="proficiency-col">
+
+                    <div class="prof-item">
+                        <div class="prof-top">
+                            <div class="prof-label">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">
+                                <span>Node.js / Express</span>
+                            </div>
+                            <span class="prof-percent">80%</span>
+                        </div>
+                        <div class="prof-track">
+                            <div class="prof-fill" data-width="80"></div>
+                        </div>
+                        <div class="prof-meta">
+                            <span class="prof-dots">
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle empty"></i>
+                            </span>
+                            <span class="prof-tag">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div class="prof-item">
+                        <div class="prof-top">
+                            <div class="prof-label">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="DB">
+                                <span>Databases (SQL / NoSQL)</span>
+                            </div>
+                            <span class="prof-percent">75%</span>
+                        </div>
+                        <div class="prof-track">
+                            <div class="prof-fill" data-width="75"></div>
+                        </div>
+                        <div class="prof-meta">
+                            <span class="prof-dots">
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle half"></i>
+                                <i class="fas fa-circle empty"></i>
+                            </span>
+                            <span class="prof-tag">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="prof-item">
+                        <div class="prof-top">
+                            <div class="prof-label">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                                <span>UI / UX Design</span>
+                            </div>
+                            <span class="prof-percent">70%</span>
+                        </div>
+                        <div class="prof-track">
+                            <div class="prof-fill" data-width="70"></div>
+                        </div>
+                        <div class="prof-meta">
+                            <span class="prof-dots">
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle filled"></i>
+                                <i class="fas fa-circle half"></i>
+                                <i class="fas fa-circle empty"></i>
+                            </span>
+                            <span class="prof-tag">Intermediate</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- End proficiency-grid -->
+
+        </div>
+        <!-- End proficiency-section -->
+
+    </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--          PROJECTS SECTION              -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="projects">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <div class="section-tag">Portfolio</div>
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <p class="section-subtitle">A selection of my recent work and personal projects</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('web', this)">Web Apps</button>
+                <button class="filter-btn" onclick="filterProjects('mobile', this)">Mobile</button>
+                <button class="filter-btn" onclick="filterProjects('design', this)">Design</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-img-bg bg-1">🛒</div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="project-badge">Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">A full-featured online store with cart management, payment processing, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo">Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-img-bg bg-2">💬</div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="project-badge">Real-time</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Real-Time Chat App</h3>
+                        <p class="project-desc">A real-time messaging application with rooms, notifications, and media sharing capabilities.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo">Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="design">
+                    <div class="project-img">
+                        <div class="project-img-bg bg-3">🎨</div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-figma"></i></a>
+                        </div>
+                        <span class="project-badge">UI/UX</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Dashboard UI Kit</h3>
+                        <p class="project-desc">A comprehensive admin dashboard design system with 50+ components and dark/light modes.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo">Preview</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="mobile">
+                    <div class="project-img">
+                        <div class="project-img-bg bg-4">📱</div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="project-badge">Mobile</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Task Manager App</h3>
+                        <p class="project-desc">A productivity app with kanban boards, reminders, collaboration, and analytics features.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Redux</span>
+                            <span class="project-tag">Expo</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo">App Store</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-img-bg bg-5">🤖</div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="project-badge">AI/ML</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AI Content Generator</h3>
+                        <p class="project-desc">An AI-powered writing assistant that generates articles, code, and creative content.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">OpenAI</span>
+                            <span class="project-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo">Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <div class="project-img-bg bg-6">📊</div>
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="project-badge">Analytics</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-desc">Real-time data visualization dashboard with interactive charts, reports, and insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">GraphQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link demo">Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--         EXPERIENCE SECTION             -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="experience">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <div class="section-tag">Journey</div>
+                <h2 class="section-title">Work <span>Experience</span></h2>
+                <p class="section-subtitle">My professional journey and educational background</p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-company">
+                            <div class="company-logo logo-purple">🏢</div>
+                            <div class="company-info">
+                                <div class="name">Tech Company</div>
+                                <div class="role">Senior Frontend Developer</div>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Led frontend development of enterprise-scale web applications.
+                            Mentored junior developers and established best practices for
+                            code quality and performance optimization.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">React</span>
+                            <span class="timeline-skill">TypeScript</span>
+                            <span class="timeline-skill">GraphQL</span>
+                            <span class="timeline-skill">AWS</span>
+                        </div>
+                    </div>
+                    <div class="timeline-date">
+                        <div class="date-badge">
+                            <i class="fas fa-calendar"></i> 2023 - Present
+                        </div>
+                    </div>
+                    <div class="timeline-dot dot-purple"></div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-company">
+                            <div class="company-logo logo-pink">💻</div>
+                            <div class="company-info">
+                                <div class="name">Digital Agency</div>
+                                <div class="role">Full Stack Developer</div>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Developed custom web solutions for various clients across different
+                            industries. Built RESTful APIs, integrated third-party services,
+                            and created responsive user interfaces.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Node.js</span>
+                            <span class="timeline-skill">Vue.js</span>
+                            <span class="timeline-skill">MySQL</span>
+                            <span class="timeline-skill">Docker</span>
+                        </div>
+                    </div>
+                    <div class="timeline-date">
+                        <div class="date-badge">
+                            <i class="fas fa-calendar"></i> 2022 - 2023
+                        </div>
+                    </div>
+                    <div class="timeline-dot dot-pink"></div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-company">
+                            <div class="company-logo logo-green">🎓</div>
+                            <div class="company-info">
+                                <div class="name">University</div>
+                                <div class="role">B.Sc. Computer Science</div>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">
+                            Graduated with a degree in Computer Science with focus on
+                            software engineering, algorithms, and web development.
+                            Participated in multiple hackathons and coding competitions.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Algorithms</span>
+                            <span class="timeline-skill">Data Structures</span>
+                            <span class="timeline-skill">Software Engineering</span>
+                        </div>
+                    </div>
+                    <div class="timeline-date">
+                        <div class="date-badge">
+                            <i class="fas fa-calendar"></i> 2018 - 2022
+                        </div>
+                    </div>
+                    <div class="timeline-dot dot-green"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--          CONTACT SECTION               -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="contact">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <div class="section-tag">Contact</div>
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together and create something amazing</p>
+            </div>
+
+            <div class="contact-wrapper">
+
+                <!-- Left: Info -->
+                <div class="reveal-left">
+                    <div class="contact-info">
+                        <h3>Let's Build Something <span class="gradient-text">Amazing</span></h3>
+                        <p>I'm currently available for freelance work and full-time opportunities.
+                            If you have a project that needs creativity and technical expertise,
+                            don't hesitate to reach out!</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <a href="mailto:developer@email.com" class="contact-card">
+                            <div class="cc-icon purple"><i class="fas fa-envelope"></i></div>
+                            <div class="cc-text">
+                                <div class="label">Email</div>
+                                <div class="value">developer@email.com</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-card">
+                            <div class="cc-icon pink"><i class="fas fa-phone"></i></div>
+                            <div class="cc-text">
+                                <div class="label">Phone</div>
+                                <div class="value">+1 (234) 567-8900</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                        <a href="#" class="contact-card">
+                            <div class="cc-icon blue"><i class="fab fa-linkedin"></i></div>
+                            <div class="cc-text">
+                                <div class="label">LinkedIn</div>
+                                <div class="value">linkedin.com/in/developer</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                        <a href="#" class="contact-card">
+                            <div class="cc-icon green"><i class="fab fa-github"></i></div>
+                            <div class="cc-text">
+                                <div class="label">GitHub</div>
+                                <div class="value">github.com/developer</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form reveal-right">
+                    <h3 class="form-title">Send me a Message 💬</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Needed</label>
+                        <select>
+                            <option value="">Select a service...</option>
+                            <option>Web Development</option>
+                            <option>Mobile App</option>
+                            <option>UI/UX Design</option>
+                            <option>Consulting</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button class="form-submit" id="formSubmit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--              FOOTER                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <footer>
+        <div class="footer-logo">&lt;Dev /&gt;</div>
+        <div class="footer-copy">
+            Designed & Built with <span>♥</span> by Developer © 2024
+        </div>
+        <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           SCROLL TO TOP                -->
+    <!-- ═══════════════════════════════════════ -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--              SCRIPTS                   -->
+    <!-- ═══════════════════════════════════════ -->
+    <script src="script.js"></script>
+
+</body>
+</html>

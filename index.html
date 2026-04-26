@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Full Stack Developer</title>
+    <link rel="Kts.png" href="Kts.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           BACKGROUND FX                -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="grid-bg"></div>
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div> 
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--            NAVIGATION                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <nav id="navbar">
+        <a href="#hero" class="logo">Kavindu Nilanga Lyr </a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           MOBILE MENU                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#hero"       onclick="closeMobileMenu()">Home</a>
+        <a href="#about"      onclick="closeMobileMenu()">About</a>
+        <a href="#skills"     onclick="closeMobileMenu()">Skills</a>
+        <a href="#projects"   onclick="closeMobileMenu()">Projects</a>
+        <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+        <a href="#contact"    onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           HERO SECTION                 -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for work
+                </div>
+                <h1 class="hero-title">
+                    <span class="line1">Hi, I'm</span>
+                    <span class="line2" id="typewriter"></span>
+                </h1>
+                <p class="hero-subtitle">
+                    A passionate <strong>Designer & Developer</strong> crafting
+                    beautiful digital experiences with modern technologies.
+                    I turn ideas into reality through clean code and creative design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Projects Done</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="1">0</div>
+                        <div class="stat-label">Years Exp.</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-placeholder">
+                        <img src="Images/K Tec Kv.png" alt="Developer Avatar">
+                    </div>
+                    <div class="floating-card">
+                        <div class="fc-icon blue"><i class="fas fa-code"></i></div>
+                        <div class="fc-text">
+                            <div class="title">Full Stack</div>
+                            <div class="sub">Development</div>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="fc-icon pink"><i class="fas fa-palette"></i></div>
+                        <div class="fc-text">
+                            <div class="title">UI/UX Design</div>
+                            <div class="sub">Figma & More</div>
+                        </div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="fc-icon green"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="fc-text">
+                            <div class="title">Responsive</div>
+                            <div class="sub">All Devices</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           ABOUT SECTION                -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">Know Who <span>I Am</span></h2>
+                <p class="section-subtitle">Passionate developer with a love for creating elegant solutions</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    
+                    <div class="avatar-placeholder">
+                        <img src="Images/ProfilePic.png" alt="Developer Avatar">
+                    </div>
+                    <div class="experience-badge">
+                        <div class="num">1+</div>
+                        <div class="text">Years of<br>Experience</div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3>Designer & Developer</h3>
+                    <p>
+                        I'm a dedicated Designer & Developer with a passion for building
+                        robust, scalable web applications. I enjoy working on all layers of
+                        the tech stack, from designing intuitive user interfaces to
+                        architecting efficient backend systems.
+                    </p>
+                    <p>
+                        My journey in software development started with curiosity and
+                        has evolved into a professional pursuit of excellence. I believe
+                        in writing clean, maintainable code and continuously learning
+                        new technologies to stay ahead of the curve.
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-user"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Full Name</div>
+                                <div class="value">Kavindu Nilanga Lyr</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Email</div>
+                                <div class="value">Kavindunilanga468@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Location</div>
+                                <div class="value">Horana, Sri Lanka</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Status</div>
+                                <div class="value open-status">Open to Work ✓</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Education - NVQ Lv 5 </div>
+                                <div class="value">National Diploma In ICT </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-language"></i></div>
+                            <div class="info-detail">
+                                <div class="label">Languages</div>
+                                <div class="value">English, Sinhala</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="Kavindu Nilanga Lyr (1).pdf" target="_blank" class="btn-primary btn-sm">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="https://wa.me/94715407850" target="_blank" class="btn-secondary btn-sm">
+                            <i class="fas fa-comments"></i> Let's Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           SKILLS SECTION               -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">My Skills</div>
+                <h2 class="section-title">Tech <span>Stack</span></h2>
+                <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+            </div>
+            <div class="skills-tabs reveal">
+                <button class="tab-btn active" onclick="showSkills('all', this)">All</button>
+                <button class="tab-btn" onclick="showSkills('frontend', this)">Frontend</button>
+                <button class="tab-btn" onclick="showSkills('backend', this)">Backend</button>
+                <button class="tab-btn" onclick="showSkills('tools', this)">Tools</button>
+            </div>
+            <div class="skills-grid reveal" id="skillsGrid">
+                <!-- FRONTEND -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <!-- <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div> -->
+                <!-- <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Vue.js</span>
+                            <span class="skill-badge">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div> -->
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-badge">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <!-- <div class="skill-card" data-category="frontend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">TypeScript</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div> -->
+                <!-- BACKEND -->
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-badge">Basic</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-badge">Basic</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Firebase</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <!-- <div class="skill-card" data-category="backend">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="filter:invert(1);">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Express</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div> -->
+                <!-- TOOLS -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <!-- <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-badge">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div> -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-badge">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <!-- <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-badge">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div> -->
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1);">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">GitHub</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-card-inner">
+                        <div class="skill-icon-wrap">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-badge">Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-hover-line"></div>
+                </div>
+            </div>
+
+            <!-- PROFICIENCY -->
+            <div class="proficiency-section reveal">
+                <div class="proficiency-header">
+                    <div class="section-tag">Proficiency</div>
+                    <h3 class="proficiency-title">How Well I <span>Know Them</span></h3>
+                    <p class="proficiency-sub">An honest breakdown of my skill levels across core technologies</p>
+                </div>
+                <div class="proficiency-grid">
+                    <div class="proficiency-col">
+                        <div class="prof-item">
+                            <div class="prof-top">
+                                <div class="prof-label">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                                    <span>JavaScript </span>
+                                </div>
+                                <span class="prof-percent">.js</span>
+                            </div>
+                            <div class="prof-track"><div class="prof-fill" data-width="100"></div></div>
+                            <div class="prof-meta">
+                                <span class="prof-dots">
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle half"></i>
+                                </span>
+                                <span class="prof-tag">Expert</span>
+                            </div>
+                        </div>
+                        <div class="prof-item">
+                            <div class="prof-top">
+                                <div class="prof-label">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                    <span>Java</span>
+                                </div>
+                                <span class="prof-percent">.java</span>
+                            </div>
+                            <div class="prof-track"><div class="prof-fill" data-width="100"></div></div>
+                            <div class="prof-meta">
+                                <span class="prof-dots">
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle empty"></i>
+                                </span>
+                                <span class="prof-tag">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="prof-item">
+                            <div class="prof-top">
+                                <div class="prof-label">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                    <span>HTML5 / CSS3</span>
+                                </div>
+                                <span class="prof-percent">.html/.css<span>
+                            </div>
+                            <div class="prof-track"><div class="prof-fill" data-width="100"></div></div>
+                            <div class="prof-meta">
+                                <span class="prof-dots">
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                </span>
+                                <span class="prof-tag">Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proficiency-col">
+                        <div class="prof-item">
+                            <div class="prof-top">
+                                <div class="prof-label">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">
+                                    <span>Node.js / Discord.js</span>
+                                </div>
+                                <span class="prof-percent">.js</span>
+                            </div>
+                            <div class="prof-track"><div class="prof-fill" data-width="100"></div></div>
+                            <div class="prof-meta">
+                                <span class="prof-dots">
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle empty"></i>
+                                </span>
+                                <span class="prof-tag">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="prof-item">
+                            <div class="prof-top">
+                                <div class="prof-label">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="DB">
+                                    <span>Databases (SQL / NoSQL)</span>
+                                </div>
+                                <span class="prof-percent">MySql</span>
+                            </div>
+                            <div class="prof-track"><div class="prof-fill" data-width="100"></div></div>
+                            <div class="prof-meta">
+                                <span class="prof-dots">
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle half"></i>
+                                    <i class="fas fa-circle empty"></i>
+                                </span>
+                                <span class="prof-tag">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="prof-item">
+                            <div class="prof-top">
+                                <div class="prof-label">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                                    <span>UI / UX Design</span>
+                                </div>
+                                <span class="prof-percent">FrontEnd </span>
+                            </div>
+                            <div class="prof-track"><div class="prof-fill" data-width="100"></div></div>
+                            <div class="prof-meta">
+                                <span class="prof-dots">
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle filled"></i>
+                                    <i class="fas fa-circle half"></i>
+                                    <i class="fas fa-circle empty"></i>
+                                </span>
+                                <span class="prof-tag">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--          PROJECTS SECTION              -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Portfolio</div>
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <p class="section-subtitle">A selection of my recent work and personal projects</p>
+            </div>
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
+                <button class="filter-btn" onclick="filterProjects('web', this)">Web Apps</button>
+                <button class="filter-btn" onclick="filterProjects('mobile', this)">Mobile</button>
+                <button class="filter-btn" onclick="filterProjects('design', this)">Design</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card reveal" data-category="system">
+                    <div class="project-img">
+                        <img src="Images/VTA.png" alt="Nexus Student Management System" class="project-img-src">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div> -->
+                        <span class="project-badge">System </span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Nexus Student Management System</h3>
+                        <p class="project-desc">Full Student Management System That Created For Vocational Traning Authority - Horana .Tts manage All the Data of The Student In That Diploma </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">MySQL</span>
+                            
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link demo">Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="Images/Nexus.png" alt="Nexus Solutions" class="project-img-src">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div> -->
+                        <span class="project-badge">Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Nexus Solutions</h3>
+                        <p class="project-desc">This Website For Tech Solutions Company To Show There Company Image To Customers. Its Made For Education Purpose..  </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                            
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link demo">Live Demo</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="Images/Liyatt.png" alt="Liyat Creation" class="project-img-src">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div> -->
+                        <span class="project-badge">Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Liyat Creation Pvt Ltd</h3>
+                        <p class="project-desc">Web Application For Privat Company Liyat Creation To Improve There Profile To Social Media Platforms.They Needed To Provide There Services infromations To Customers </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link demo">App Store</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="project-card reveal" data-category="Web">
+                    <div class="project-img">
+                        <img src="Images/Redzones.png" alt="Redzone Mobiles" class="project-img-src">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div> -->
+                        <span class="project-badge">Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Redzone Mobiles</h3>
+                        <p class="project-desc"> This Website Made For Mobile Shop That Only Needed To Improve There Business Brand For There Customers In The Online Platforms </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Php</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">MySql</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link demo">App Store</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-img">
+                        <img src="Images/Redzones.png" alt="VidPro Video Downloder" class="project-img-src">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div> -->
+                        <span class="project-badge">BOT</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">VidPro Video Downloder</h3>
+                        <p class="project-desc"> This Website Provide Services You Can Download Youtube / Facebook & Tiktok videos By Urls Easily In Here ..  </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Html</span>
+                            <span class="project-tag">Css</span>
+                            <span class="project-tag">JavaScript
+
+                            
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link demo">App Store</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-card reveal" data-category="#">
+                    <div class="project-img">
+                        <img src="Images/Furina.gif" alt="Discord Bot" class="project-img-src">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div> -->
+                        <span class="project-badge">BOT</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Lotus Plays Discord Bots</h3>
+                        <p class="project-desc"> This Bot Manage Lotus Roleplay Fivm Server Discord Server . Its Manage The Server An Execute Commands For Archive There Tasks Easily </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Discord.Js</span>
+                            <span class="project-tag">Node.Js</span>
+                            
+                        </div>
+                        <!-- <div class="project-links">
+                            <a href="#" class="project-link demo">App Store</a>
+                            <a href="#" class="project-link code"><i class="fab fa-github"></i> Code</a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--      DISCORD COMMUNITY SECTION         -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="discord">
+        <div class="container">
+            <div class="discord-wrapper">
+                <div class="discord-content reveal">
+                    <div class="discord-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3 class="discord-title">Join Our Community</h3>
+                    <p class="discord-desc">Connect with developers in <strong>K Tec Solutions</strong> Discord server</p>
+                    <a href="https://discord.gg/WfKEebnEKG" target="_blank" class="btn-discord">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--         EXPERIENCE SECTION             -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Journey</div>
+                <h2 class="section-title">Education & <span>Experience</span></h2>
+                <p class="section-subtitle">My professional journey and educational background</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-company">
+                            <div class="company-logo logo-purple">🏢</div>
+                            <div class="company-info">
+                                <div class="name">Vocational Tranning Authority</div>
+                                <div class="role">Computer Hardware Technician</div>
+                            </div>
+                        </div>
+                        <p class="timeline-desc">CISCO A + Computer Hardware Technician NVQ Level 04 Course Completed & Graduated.Its Covers Computer Hardware & network Fundemental Parts In The Indrustry</p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Computer Hardware</span>
+                            <span class="timeline-skill">Networking</span>
+                            <span class="timeline-skill">Troubleshooting</span>
+                        </div>
+                    </div>
+                    <div class="timeline-date">
+                        <div class="date-badge"><i class="fas fa-calendar"></i> 2023 </div>
+                    </div>
+                    <div class="timeline-dot dot-purple"></div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-company">
+                            <div class="company-logo logo-pink">💻</div>
+                            <div class="company-info">
+                                <div class="name">Urban Council - Horana</div>
+                                <div class="role">IT Supporter & Hadrware Technician</div>
+                            </div>
+                        </div>
+                        <p class="timeline-desc"> Worked As A IT Technician & Computer Hardware Technician In Urban Council Horana . I Manage Entire IT Department & There Documents In There</p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Documentry</span>
+                            <span class="timeline-skill">Project Manage</span>
+                            <span class="timeline-skill">TrobleShooting</span>
+                            
+                        </div>
+                    </div>
+                    <div class="timeline-date">
+                        <div class="date-badge"><i class="fas fa-calendar"></i> 2023 - 2024</div>
+                    </div>
+                    <div class="timeline-dot dot-pink"></div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-company">
+                            <div class="company-logo logo-green">🎓</div>
+                            <div class="company-info">
+                                <div class="name">National Diploma In ICT Level 5</div>
+                                <div class="role">System & Web Application Development</div>
+                            </div>
+                        </div>
+                        <p class="timeline-desc"> Undergraduate | Learned Web Application & System Development an Design With Software Testing & QA Skills.</p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Web Development</span>
+                            <span class="timeline-skill">Database Management</span>
+                            <span class="timeline-skill">System Devlopment</span>
+                            <span class="timeline-skill">Software Testing</span>
+                            <span class="timeline-skill">QA</span>  
+                            <span class="timeline-skill">Project Management</span>
+                            <span class="timeline-skill">Photoshop & Premiere Pro </span>
+                        </div>
+                    </div>
+                    <div class="timeline-date">
+                        <div class="date-badge"><i class="fas fa-calendar"></i> 2025 - 2026</div>
+                    </div>
+                    <div class="timeline-dot dot-green"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--          CONTACT SECTION               -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Contact</div>
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together and create something amazing</p>
+            </div>
+            <div class="contact-wrapper">
+                <!-- Left Info -->
+                <div class="reveal-left">
+                    <div class="contact-info">
+                        <h3>Let's Build Something <span class="gradient-text">Amazing</span></h3>
+                        <p>I'm currently available for freelance work and full-time opportunities. If you have a project that needs creativity and technical expertise, don't hesitate to reach out!</p>
+                    </div>
+                    <div class="contact-cards">
+                        <a href="mailto:developer@email.com" class="contact-card">
+                            <div class="cc-icon purple"><i class="fas fa-envelope"></i></div>
+                            <div class="cc-text">
+                                <div class="label">Email</div>
+                                <div class="value">kavindunilanga468@gmail.com</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-card">
+                            <div class="cc-icon pink"><i class="fas fa-phone"></i></div>
+                            <div class="cc-text">
+                                <div class="label">Phone</div>
+                                <div class="value">+94 0715407850</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                        <!-- <a href="#" class="contact-card">
+                            <div class="cc-icon blue"><i class="fab fa-linkedin"></i></div>
+                            <div class="cc-text">
+                                <div class="label">LinkedIn</div>
+                                <div class="value">linkedin.com/in/developer</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a> -->
+                        <a href="#" class="contact-card">
+                            <div class="cc-icon green"><i class="fab fa-github"></i></div>
+                            <div class="cc-text">
+                                <div class="label">GitHub</div>
+                                <div class="value">github.com/MrKv7</div>
+                            </div>
+                            <i class="fas fa-arrow-right cc-arrow"></i>
+                        </a>
+                    </div>
+                    <!-- Social Media Section -->
+                     
+                </div>
+
+                <!-- Right Form -->
+                <div class="contact-form reveal-right">
+                    <h3 class="form-title">Send Message To Whatsapp</h3>
+
+                    <!-- Toast Notification -->
+                    <div class="form-toast" id="formToast"></div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" placeholder="You Name " required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" placeholder="You Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address <span class="required">*</span></label>
+                        <input type="email" id="emailInput" placeholder="Mail@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phoneInput" placeholder="+94 0715######0">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Needed <span class="required">*</span></label>
+                        <select id="serviceInput">
+                            <option value="">Select a service...</option>
+                            <option>Web Development</option>
+                            <option>Video Editing</option>
+                            <option>UI/UX Design</option>
+                            <option>System Development</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Budget Range</label>
+                        <select id="budgetInput">
+                            <option value="">Select budget...</option>
+                            <option>15.000 LKR</option>
+                            <option>25.000 LKR</option>
+                            <option>45.000 LKR</option>
+                            <option>50.000 - 100.000 LKR</option>
+                            <option>100.000 - 200.000 LKR</option>
+                            
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message <span class="required">*</span></label>
+                        <textarea id="messageInput" placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <button class="form-submit" id="formSubmit">
+                        <span id="submitText"><i class="fas fa-paper-plane"></i> Send Message</span>
+                        <span id="submitLoader" style="display:none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--              FOOTER                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <footer>
+        <div class="footer-logo">&lt;Kv7 - Kavindu Nilanga Lyr /&gt;</div>
+        <div class="footer-copy">
+            Designed & Built By Kavindu Nilanga © 2026
+        </div>
+        <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           SCROLL TO TOP                -->
+    <!-- ═══════════════════════════════════════ -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
